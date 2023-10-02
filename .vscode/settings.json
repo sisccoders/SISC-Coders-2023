@@ -1,0 +1,7 @@
+{
+    "gitdoc.enabled": true,
+    "files.associations": {
+        "random": "c",
+        "cmath": "c"
+    }
+}
