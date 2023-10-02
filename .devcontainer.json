@@ -3,7 +3,14 @@
   "extensions": [
     "ms-azuretools.vscode-docker",
     "ms-python.python",
-    // ... (other extensions)
+    "ms-python.vscode-pylance",
+    "ms-vscode.cpptools",
+    "ms-vscode.hexeditor",
+    "ms-vsliveshare.vsliveshare",
+    "redhat.java",
+    "vscjava.vscode-java-debug",
+    "vsls-contrib.gitdoc”,
+	  "ms-dotnettools.csharp"
   ],
   "settings": {
     "breadcrumbs.enabled": false,
