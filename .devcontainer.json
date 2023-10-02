@@ -1,11 +1,13 @@
 {
-    "forwardPorts": [
-      5000,
-      5900,
-      6081,
-      8080,
-      8082
-    ],
-    "image": "ghcr.io/cs50/codespace:f1665b45d25123344058532bd8e80e308898efda"
+  "image": "sisccoders",
+  "extensions": [
+    "ms-azuretools.vscode-docker",
+    "ms-python.python",
+    // ... (other extensions)
+  ],
+  "settings": {
+    "breadcrumbs.enabled": false,
+    "C_Cpp.autocomplete": "disabled",
+    // ... (other settings)
   }
-  
+}
