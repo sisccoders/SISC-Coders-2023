@@ -1,6 +1,8 @@
 {
   "name": "Your Dev Container",
-  "image": "ubuntu:22.04",
+  "build": {
+    "dockerfile": ".Dockerfile"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -170,7 +172,7 @@
   "mounts": [
     "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind"
   ],
-  "postCreateCommand": "/opt/cs50/bin/postCreateCommand",
+  "postCreateCommand": "echo 'PS1=\\\"$ \\\"' >> ~/.bashrc",
   "runArgs": [
     "--label", "maintainer=sysadmins@cs50.harvard.edu",
     "--label", "org.opencontainers.image.ref.name=ubuntu",
