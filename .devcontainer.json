@@ -23,7 +23,7 @@
             "redhat.java",
             "vscjava.vscode-java-debug",
             "vsls-contrib.gitdoc”,
-            ms-dotnettools.csharp"
+            "ms-dotnettools.csharp"
           ],
   "settings": {
               "breadcrumbs.enabled": false,
