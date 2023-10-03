@@ -1,2 +1,2 @@
 char * name = "Alex";
-printf("Hello %s", name);
+print("Hello %s", name);
