@@ -65,7 +65,9 @@
             "explorer.compactFolders": false,
             "files.autoSave": "afterDelay",
             "files.exclude": {
-              "**/.*": true
+              "**/.*": true,
+              "README.md": true,
+              "LICENSE": true
             },
             "files.trimTrailingWhitespace": true,
             "files.watcherExclude": {
