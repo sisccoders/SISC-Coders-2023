@@ -1,7 +1,5 @@
 def main():
-    for i in range(4):
-        name = input("What's your name? ")
-        print(f"Hello {name}")
+    print('Hello Coders')
 
 if __name__ == "__main__":
     main()
