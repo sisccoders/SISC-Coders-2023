@@ -170,9 +170,9 @@
   "mounts": [
     "source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind"
   ],
-  "postCreateCommand": "echo 'PS1=\\\"$ \\\"' >> ~/.bashrc",
+  "postCreateCommand": "echo \"PS1='$ '\" >> ~/.bashrc",
   "runArgs": [
-    "--label", "maintainer=sysadmins@cs50.harvard.edu",
+    "--label", "maintainer=18-0336@sgen.edu.ph",
     "--label", "org.opencontainers.image.ref.name=ubuntu",
     "--label", "org.opencontainers.image.version=22.04"
   ]
