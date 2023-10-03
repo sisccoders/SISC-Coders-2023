@@ -1,8 +1,6 @@
 {
   "name": "Your Dev Container",
-  "build": {
-    "dockerfile": ".Dockerfile"
-  },
+  "image": "ghcr.io/sisccoders/2023:v1.0",
   "customizations": {
     "vscode": {
       "extensions": [
