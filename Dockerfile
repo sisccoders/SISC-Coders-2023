@@ -27,6 +27,8 @@ RUN apt-get update \
     && apt-get install -y dotnet-sdk-6.0 \
     && rm -rf /var/lib/apt/lists/*
 
+RUN echo "alias python=python3" >> ~/.bashrc
+
 # Set up the working directory
 WORKDIR /workspace
 
