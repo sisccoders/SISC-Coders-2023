@@ -1,2 +1,2 @@
-char * name = "Alex"
-printf("Hello %s", name)
+char * name = "Alex";
+printf("Hello %s", name);
