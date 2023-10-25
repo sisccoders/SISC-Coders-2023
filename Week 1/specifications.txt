@@ -2,3 +2,4 @@ Basic:
 
 
 Advanced:
+Tip Calculator
