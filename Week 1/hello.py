@@ -1,3 +1,3 @@
 # To print Hello World on the console
 
-print('Hello World', sep, end)
+print('Hello World', end='')
