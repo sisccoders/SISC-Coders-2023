@@ -17,9 +17,31 @@ class Game:
 
     def parse_command(self, command):
         #TODO
-        '''
+                """
+        Parses the given command from the user and executes the game action.
 
-        '''
+        The command is expected to be a string with parts separated by spaces.
+        This method uses pattern matching to identify the command structure and
+        calls the appropriate method or prints the appropriate message.
+
+        Supported commands are:
+        - "go" followed by a direction (e.g., "go north") to move the player.
+        - "pick up" followed by an item (e.g., "pick up key") to add an item to the inventory.
+        - "talk to" followed by a character (e.g., "talk to guard") for interaction.
+        - "quit" to end the game.
+
+        If the command is not recognized, it informs the user.
+
+        Parameters:
+        - command (str): The input command from the user.
+
+        Returns:
+        None
+
+        Hints:
+        the split() function in https://www.w3schools.com/python/python_ref_string.asp
+        The match statement https://docs.python.org/3/reference/compound_stmts.html#match
+        """
         match command.split():
             case ["go", direction]:
                 self.move(direction)
