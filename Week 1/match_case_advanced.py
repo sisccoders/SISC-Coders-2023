@@ -9,20 +9,9 @@ def calculate(operation, number=None):
             return "Error: The number provided is not valid."
 
     match operation:
-        case "add":
-            memory += number
-        case "subtract":
-            memory -= number
-        case "multiply":
-            memory *= number
-        case "divide":
-            if number == 0:
-                return "Error: Cannot divide by zero."
-            memory /= number
-        case "reset":
-            memory = 0
-        case _:
-            return "Error: Unknown operation."
+        #TODO
+        '''
+        '''
 
     return f"Current value: {memory}"
 
