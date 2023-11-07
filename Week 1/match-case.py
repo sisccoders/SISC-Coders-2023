@@ -1,38 +1,31 @@
 def main():
-    length = int(input('How long is the word? '))
-    valid_words = load_words('1-1000.txt', length)
-    print('Words Loaded!')
-    guess = input('What is the word? ')
-    print(check_valid(valid_words, guess))
-    return
+    c = input("What's the color of the traffic light? ") #Asks for color of the traffic light
+    print(traffic_light_action(c))
 
-def load_words(filename, l):
-    """
-    Read the contents of the given file.  Assumes the file contents contain
-    different words in each line.
+def traffic_light_action(color: str):
+    #TODO
+    '''
+    Implement a function that returns different strings depending on the color of the traffic light
+    Fix extra spaces or wrong capitalizations
+        '    red' and ' rEd' is equal to 'red'
 
     Parameters:
-    filename - the name of the data file as a string
-    length - the length of the word
+    color - the current color of the traffic light
 
     Returns:
-    a list of words of length l
-    """
-
-    words = []
-
-    with open(filename, 'r') as f:
-        for word in f:
-            stripped_word = word.strip()  # Strip whitespace and newline characters
-            if len(stripped_word) == l:  # Check if the length matches after stripping
-                words.append(stripped_word)  # Append the stripped word
-    return words
-
-def check_valid(words, guess):
-    for word in words:
-        match word:
-            case guess:
-                return 'Valid'
-    return 'Invalid'
+    a string that says
+        'Go' when the color is green
+        'Slow down' when the color is yellow
+        'Stop' when the color is red
+        'Invalid color' when it isn't any of the three
+    '''
 
 main()
+
+#How to Test
+'''
+Run python match-case.py and type red when prompted question. The function should return 'Stop'
+Run python match-case.py and type     red when prompted question. The function should return 'Stop'
+Run python match-case.py and type gReEn when prompted question. The function should return 'Go'
+Run python match-case.py and type yell0w when prompted question. The function should return 'Invalid color'
+'''
