@@ -16,6 +16,10 @@ class Game:
             self.parse_command(command)
 
     def parse_command(self, command):
+        #TODO
+        '''
+
+        '''
         match command.split():
             case ["go", direction]:
                 self.move(direction)
