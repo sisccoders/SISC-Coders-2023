@@ -24,8 +24,8 @@ main()
 
 #How to Test
 '''
-Run python match-case.py and type red when prompted question. The function should return 'Stop'
-Run python match-case.py and type     red when prompted question. The function should return 'Stop'
-Run python match-case.py and type gReEn when prompted question. The function should return 'Go'
-Run python match-case.py and type yell0w when prompted question. The function should return 'Invalid color'
+Run python match_case_basic.py and type red when prompted question. The function should return 'Stop'
+Run python mmatch_case_basic.py and type     red when prompted question. The function should return 'Stop'
+Run python match_case_basic.py and type gReEn when prompted question. The function should return 'Go'
+Run python match_case_basic.py and type yell0w when prompted question. The function should return 'Invalid color'
 '''
