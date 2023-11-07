@@ -39,8 +39,24 @@ class Game:
         None
 
         Hints:
-        the split() function in https://www.w3schools.com/python/python_ref_string.asp
-        The match statement https://docs.python.org/3/reference/compound_stmts.html#match
+        - The command parsing relies on the 'match' statement introduced in Python 3.10, which
+          simplifies the matching of complex patterns in strings.
+        https://docs.python.org/3/reference/compound_stmts.html#match
+        - Commands are expected to be input as lowercase to maintain consistency and avoid case-sensitivity issues.
+        - The 'split' method is used to break the command into a list, which is then matched against known patterns.
+        https://www.w3schools.com/python/ref_string_split.asp
+        - The 'case' patterns are designed to match the list structure resulting from 'split', with each element
+          corresponding to a part of the command (e.g., action, direction, item, or character).
+        i.e. case [a, b, ... k]
+        - The 'go' command expects a direction as a second argument, which should correspond to a key in the
+          current location's dictionary of possible exits.
+        - The 'pick up' command expects an item as a third argument, which should be present in the current location
+          or a condition that can be checked against the player's current state or inventory.
+        - The 'talk to' command expects a character as a third argument, and the interaction logic will depend on
+          the current state of the game or the player's inventory.
+        - The 'quit' command immediately exits the game loop and should perform any necessary cleanup or saving.
+        
+        - The wildcard '_' case is used as a fallback for unrecognized commands, providing an error message to the user.
         """
         match command.split():
             case ["go", direction]:
