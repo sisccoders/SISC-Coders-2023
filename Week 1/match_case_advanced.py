@@ -17,7 +17,7 @@ class Game:
 
     def parse_command(self, command):
         #TODO
-                """
+        """
         Parses the given command from the user and executes the game action.
 
         The command is expected to be a string with parts separated by spaces.
