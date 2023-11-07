@@ -1,5 +1,5 @@
 def main():
-    length = input('How long is the word? ')
+    length = int(input('How long is the word? '))
     valid_words = load_words('1-1000.txt', length)
     print('Words Loaded!')
     guess = input('What is the word? ')
@@ -19,14 +19,14 @@ def load_words(filename, l):
     a list of words of length l
     """
 
-    list = []
+    words = []
 
-    f = open(filename, 'r')
-
-    for word in f:
-        if len(word) == l:
-            list.append(word)
-    return list
+    with open(filename, 'r') as f:
+        for word in f:
+            stripped_word = word.strip()  # Strip whitespace and newline characters
+            if len(stripped_word) == l:  # Check if the length matches after stripping
+                words.append(stripped_word)  # Append the stripped word
+    return words
 
 def check_valid(words, guess):
     for word in words:
