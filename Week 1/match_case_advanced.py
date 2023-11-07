@@ -55,21 +55,10 @@ class Game:
         - The 'talk to' command expects a character as a third argument, and the interaction logic will depend on
           the current state of the game or the player's inventory.
         - The 'quit' command immediately exits the game loop and should perform any necessary cleanup or saving.
-        
+        https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/
         - The wildcard '_' case is used as a fallback for unrecognized commands, providing an error message to the user.
         """
-        match command.split():
-            case ["go", direction]:
-                self.move(direction)
-            case ["pick", "up", item]:
-                self.pick_up(item)
-            case ["talk", "to", character]:
-                self.talk_to(character)
-            case ["quit"]:
-                print("Thanks for playing!")
-                exit()
-            case _:
-                print("I don't understand that command.")
+        #TODO
 
     def move(self, direction):
         if direction in self.map[self.location]:
