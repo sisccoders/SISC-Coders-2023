@@ -30,8 +30,8 @@ def load_words(filename, l):
 
 def check_valid(words, guess):
     for word in words:
-        match guess:
-            case word:
+        match word:
+            case guess:
                 return 'Valid'
     return 'Invalid'
 
