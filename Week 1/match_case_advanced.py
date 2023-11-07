@@ -57,6 +57,8 @@ class Game:
         - The 'quit' command immediately exits the game loop and should perform any necessary cleanup or saving.
         https://www.geeksforgeeks.org/python-exit-commands-quit-exit-sys-exit-and-os-_exit/
         - The wildcard '_' case is used as a fallback for unrecognized commands, providing an error message to the user.
+
+        This is advanced and is meant to be very hard and challenging. Don't feel afraid to collaborate with your friends or ask the leaders.
         """
         #TODO
 
