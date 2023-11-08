@@ -18,14 +18,12 @@ def traffic_light_action(color: str):
         'Slow down' when the color is yellow
         'Stop' when the color is red
         'Invalid color' when it isn't any of the three
+
+    How to Test
+    Run python match_case_basic.py and type red when prompted question. The function should return 'Stop'
+    Run python mmatch_case_basic.py and type     red when prompted question. The function should return 'Stop'
+    Run python match_case_basic.py and type gReEn when prompted question. The function should return 'Go'
+    Run python match_case_basic.py and type yell0w when prompted question. The function should return 'Invalid color'
     '''
 
 main()
-
-#How to Test
-'''
-Run python match_case_basic.py and type red when prompted question. The function should return 'Stop'
-Run python mmatch_case_basic.py and type     red when prompted question. The function should return 'Stop'
-Run python match_case_basic.py and type gReEn when prompted question. The function should return 'Go'
-Run python match_case_basic.py and type yell0w when prompted question. The function should return 'Invalid color'
-'''
