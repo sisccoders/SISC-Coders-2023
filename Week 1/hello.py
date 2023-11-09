@@ -6,7 +6,7 @@ def receive_input():
     name = input('What is your name? ')
     return name
 
-def hello():
+def hello(name):
     '''
     Asks for the user's name and prints it in terminal
     '''
