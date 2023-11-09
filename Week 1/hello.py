@@ -1,2 +1,2 @@
-name = input('What is your name? ')
-print(f'Hello {name}')
+grade = input('What is your grade? ')
+print(f'{grade}')
