@@ -4,17 +4,19 @@ def main():
     print(letter_grade)
 
 def convert_to_letter(grade):
-    if grade > 95:
+    if grade > 95 and grade <= 100:
         return 'VS'
     elif grade > 90:
         return 'S'
     elif grade > 85:
         return 'AA'
-    elif grade > 80:
+    elif grade >= 80:
         return 'A'
-    elif grade > 70:
+    elif grade >= 70:
         return 'LA'
-    else:
+    elif grade >= 0 and grade < 70:
         return 'P'
+    else:
+        return 'Please type valid grades'
 
 main()
