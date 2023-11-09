@@ -15,13 +15,16 @@ def categorize_age(age):
     Hint
     use if-else statement
     '''
-    if age >= 65:
-        print('Senior')
-    elif age > 20:
-        print('Adult')
-    elif age > 13:
-        print('Teen')
-    elif age >= 0:
-        print('Child')
+    if age < 0:
+        return("invalid")
+    else:
+        if age <= 12:
+            return("Child")
+        elif age <=19:
+            return('Teen')
+        elif age <=64:
+            return("Adult")
+        else:
+            return('Senior')
 
 main()
