@@ -15,6 +15,6 @@ def categorize_age(age):
     Hint
     use if-else statement
     '''
-    #TODO
+
 
 main()
