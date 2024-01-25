@@ -1,15 +1,10 @@
-import random
+from random import random
 
-z = random.choice(["Head","Tails"])
+#random chooses a float between 0 and 1
+# 50% = 0.5
 
-while True:
-    user = input("Pick a Side, Head or Tails?: ")
-    if user != 'Head' and user != 'Tails':
-        print('Please type Head or Tails')
-    else:
-        break
-if user:
-    if z == user:
-        print('You guessed correctly')
-    else:
-        print("You didn't guess correctly")
+p = random()
+if p < 0.5:
+    print('Tails')
+else:
+    print('Heads')
