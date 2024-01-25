@@ -2,6 +2,7 @@ from random import randrange
 
 def main():
     x = randrange(1,100,1) #chooses random integer from 1 to 99 and assigns it to x
+    print('Game Start')
     guessed = False #sets a variable that contains the state of the game
     guess_count = 0 #counts the number of guesses the user made so far
 
