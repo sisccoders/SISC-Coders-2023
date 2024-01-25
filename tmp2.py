@@ -1,6 +1,7 @@
 import random
 
-#Create a code that simulates a fair coin toss:
-#it's going to print out Heads for a 50% chance and Tails for 50% chance
+z = random.choice(["Head","Tails"])
 
-random.random()
+user = input("Pick a Side, Head or Tails?: ")
+if user:
+    print(z)
