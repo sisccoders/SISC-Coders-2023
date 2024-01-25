@@ -1,9 +1,4 @@
-import sys
+from random import random
 
-argc = len(sys.argv)
-
-if argc != 2:
-    sys.exit('Incorrect Number of command line arguments')
-
-x = sys.argv[0]
-print(x)
+#Create a code that simulates a fair coin toss:
+#it's going to print out Heads for a 50% chance and Tails for 50% chance
